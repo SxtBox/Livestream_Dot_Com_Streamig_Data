@@ -14,7 +14,7 @@ M3U Builder By Direct Link
 
 M3U By ID
 
-M3U Builder By Direct Raw
+M3U Builder By Direct Link Raw Code
 
 M3U Builder By Direct Link
 
@@ -24,6 +24,6 @@ XML Structure By Direct Link
 
 XML Structure By ID
 
-XML_Builder_by_ID
+XML Builder by ID
 
 XML Builder Direct Link
