@@ -155,5 +155,5 @@ $group_title = ('group-title="'. $grouptitle .'"');
 echo "\r#EXTINF:-1 $tvg_id $tvg_name $tvg_logo $group_title,$REPLACE_STREAM_TITLE\n";
 echo $stream."\n";
 }
-//ob_end_flush();
+ob_end_flush();
 ?>
