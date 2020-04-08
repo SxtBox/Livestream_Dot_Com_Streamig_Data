@@ -49,7 +49,7 @@ $channelid = $_GET["id"];
 $MAIN_LINK = file_get_contents("https://livestream.com/" . $channelid);
 //$MAIN_LINK = file_get_contents("https://livestream.com/accounts/22300508/events/6675945","UTF-8");
 preg_match_all("/title>(.*\w)</",
-	$MAIN_LINK,
+    $MAIN_LINK,
     $GET_STREAMS,
     PREG_SET_ORDER
 );
@@ -69,15 +69,15 @@ $STREAM_TITLE = utf8_encode($TITULLI[1]);
 }
 // REMOVE [on Livestream]
 $REPLACE_STREAM_TITLE = str_replace(
-	// REPLACE FROM
+    // REPLACE FROM
     array(" on Livestream"),
-	// REPLACE TO
+    // REPLACE TO
     array(""),
     $STREAM_TITLE
 );
 // M3U8 STREAM
 preg_match_all('/secure_m3u8_url":"(.*?)"/',
-	$MAIN_LINK,
+    $MAIN_LINK,
     $streaming_content,
     PREG_SET_ORDER
 );
@@ -85,7 +85,7 @@ preg_match_all('/secure_m3u8_url":"(.*?)"/',
 /* REGEX LOGO
 //preg_match_all('/.*small_url.*(http.*?170x170.*?)"/',
 preg_match_all('/.*original_height":1200,"url":".*(http.*?.*?)"/',
-	$MAIN_LINK,
+    $MAIN_LINK,
     $thumbnail_regex,
     PREG_SET_ORDER
 );
