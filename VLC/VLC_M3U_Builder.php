@@ -49,7 +49,7 @@ $Stream_Provider = "Livestream Dot Com";
 // LINK TO GET M3U
 $MAIN_LINK = file_get_contents("https://livestream.com/accounts/22300508/events/6675945","UTF-8");
 preg_match_all("/title>(.*\w)</",
-	$MAIN_LINK,
+    $MAIN_LINK,
     $GET_STREAMS,
     PREG_SET_ORDER
 );
@@ -70,9 +70,9 @@ $STREAM_TITLE = utf8_encode($TITULLI[1]);
 }
 
 $REPLACE_STREAM_TITLE = str_replace(
-	// REPLACE FROM
+    // REPLACE FROM
     array(" on Livestream"),
-	// REPLACE TO
+    // REPLACE TO
     array(""),
     $STREAM_TITLE
 );
@@ -83,12 +83,14 @@ preg_match_all('/secure_m3u8_url":"(.*?)"/',
     PREG_SET_ORDER
 );
 
+/*
 //preg_match_all('/.*small_url.*(http.*?170x170.*?)"/',
 preg_match_all('/.*original_height":1200,"url":".*(http.*?.*?)"/',
-	$MAIN_LINK,
+    $MAIN_LINK,
     $thumbnail_regex,
     PREG_SET_ORDER
 );
+*/
 
 if(!$MAIN_LINK) die("<!DOCTYPE html>
 <html lang=\"en\">
