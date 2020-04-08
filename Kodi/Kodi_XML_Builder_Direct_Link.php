@@ -34,7 +34,7 @@ set_time_limit(0);
 date_default_timezone_set("Europe/Tirane");
 $Stream_Provider = "Livestream Dot Com";
 //$channelid = $_GET["id"];
-$MAIN_LINK = file_get_contents("https://livestream.com/accounts/22300508/events/6675945--");
+$MAIN_LINK = file_get_contents("https://livestream.com/accounts/22300508/events/6675945");
 preg_match_all("/title>(.*\w)</",
     $MAIN_LINK,
     $GET_STREAMS,
