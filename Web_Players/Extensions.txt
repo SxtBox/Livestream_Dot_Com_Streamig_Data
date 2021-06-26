@@ -1,0 +1,7 @@
+JSONView Google Extension
+https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc
+
+Required CORS
+Allow CORS: Access-Control-Allow-Origin Extensions
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf/related?hl=en
+Video how to use https://www.youtube.com/watch?v=KruSUqLdxQA
